@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<PreferenceCategory android:title="Scroll Settings" >
+		<ListPreference
+				android:defaultValue="Medium"
+				android:entries="@array/tilt_sensitivity"
+				android:entryValues="@array/tilt_sensitivity"
+				android:key="tilt_sensitivity"
+				android:summary="Adjust how sensitive the tilt sensors are for scrolling"
+				android:title="Tilt Sensitivity" />
+		<ListPreference
+				android:defaultValue="Medium"
+				android:entries="@array/scroll_speed"
+				android:entryValues="@array/scroll_speed"
+				android:key="scroll_speed"
+				android:summary="Adjust how fast the screen scrolls when tilted"
+				android:title="Scroll Speed" />
+		<ListPreference
+				android:defaultValue="Horizontal"
+				android:entries="@array/natural_tilt"
+				android:entryValues="@array/natural_tilt"
+				android:key="natural_tilt"
+				android:summary="Adjust the base orientation of the phone"
+				android:title="Natural Tilt" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Developer Settings" >
+		<CheckBoxPreference
+				android:defaultValue="true"
+				android:key="show_sensor"
+				android:summary="Show sensor data for debugging"
+				android:title="Show Sensor" />
+	</PreferenceCategory>
+</PreferenceScreen>
